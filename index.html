@@ -1,0 +1,120 @@
+<link rel="stylesheet" href="styles.css">
+
+
+<body>
+    <header class="header">
+      <h3 class="header__logo">Catalog it</h3>
+      <nav class="header__nav-links">
+        <a class="header__nav-link" href="#">Products</a>
+        <button class="header__nav-button">Add a product</button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1 class="hero__heading">Catalog it</h1>
+        <p class="hero__description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          commodi numquam accusantium eligendi, iste eius voluptate illum dicta
+          deleniti impedit odit placeat minus saepe cum quidem libero.
+          Dignissimos laborum fugit quod aperiam dolore? Incidunt ipsam cumque
+          modi reiciendis explicabo, fugit temporibus iusto iste, molestias ex
+          unde. Obcaecati inventore alias voluptate?
+        </p>
+        <button class="hero__button">Add a product</button>
+      </section>
+      <section class="register-modal">
+        <div class="register-modal__content">
+          <button class="register-modal__button">X</button>
+          <h2>Register a product</h2>
+
+          <form action="" id="register_form">
+            <div class="register-form__input-container">
+              <label for="title">Title</label>
+              <input
+                type="text"
+                name="title"
+                placeholder="Enter product title"
+                class="register-form__input"
+              />
+            </div>
+            <div class="register-form__input-container">
+              <label for="#">Category</label>
+              <select class="register-form__input" name="category">
+                <option value="beaty">Beaty</option>
+                <option value="health">Health</option>
+                <option value="entertainment">Entertainement</option>
+                <option value="technology">Technology</option>
+              </select>
+            </div>
+            <div class="register-form__input-container">
+              <label for="description">Description</label>
+              <textarea
+                name="description"
+                class="register-form__text-area"
+                placeholder="Enter product description"
+              ></textarea>
+            </div>
+            <div class="register-form__input-container">
+              <label for="imageSrc">Choose a profile picture:</label>
+              <input
+                type="file"
+                name="imageSrc"
+                accept="image/png, image/jpeg"
+              />
+            </div>
+
+            <div class="register-form__input-container">
+              <label for="price">Price</label>
+              <input
+                type="number"
+                name="price"
+                placeholder="Enter product price"
+                class="register-form__input"
+              />
+            </div>
+            <div class="register-form__input-container">
+              <label for="expiry_date">Expiry date</label>
+              <input
+                type="date"
+                name="expiry_date"
+                class="register-form__input"
+              />
+            </div>
+            <div class="">
+              <label for="inStock">In stock </label>
+              <input type="checkbox" name="inStock" checked />
+            </div>
+            <button type="submit" class="register-form__button">
+              Add product
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="products">
+        <h2 class="products__heading">Available Products</h2>
+        <div class="products__card-container"></div>
+      </section>
+
+      <section class="details__modal">
+        <div class="details__content">
+          <button class="details-modal__close-button">X</button>
+          <div class="details__card">
+            <h3>Sweater</h3>
+            <img
+              src="https://lp2.hm.com/hmgoepprod?set=source[/13/6d/136d52307d7a42ce854831114cfd1bd0a355da3a.jpg],origin[dam],category[ladies_cardigansjumpers_jumpers],type[DESCRIPTIVESTILLLIFE],res[w],hmver[2]&call=url[file:/product/main]"
+              alt="product image"
+              class="detail__image"
+            />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+              excepturi deserunt, error enim sequi magni tempora asperiores
+              rerum aut ducimus vel minima repudiandae corporis, perspiciatis
+              nulla non beatae quasi. Neque.
+            </p>
+            <button class="details__button">Close</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
